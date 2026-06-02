@@ -333,3 +333,177 @@ footer {
 .footer-links a:hover {
     color: #ffffff;
 }
+
+/* --- Seiten-Navigation --- */
+.page-nav {
+    background-color: #1a2530;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.page-nav a {
+    color: #a0b0c0;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+.page-nav a:hover,
+.page-nav a.active {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* --- Abschnitts-Titel (Autoren, Hintergrund, Unterzeichner) --- */
+.section-title {
+    font-size: 1.6rem;
+    color: #243444;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #243444;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+/* Direkte Absätze im Container (Hintergrund-Seite) */
+.container > p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+/* --- Personen-Karten (Autoren-Seite) --- */
+.person-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.person-card.kern {
+    border-left: 5px solid #00a0e0;
+}
+
+.person-card.unterstuetzer {
+    border-left: 5px solid #669933;
+}
+
+.person-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.avatar-placeholder {
+    width: 60px;
+    height: 60px;
+    background-color: #cbd5e1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #475569;
+    font-weight: bold;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.person-name {
+    font-size: 1.3rem;
+    color: #243444;
+    font-weight: 700;
+}
+
+.quote {
+    font-style: italic;
+    color: #475569;
+    padding-left: 15px;
+    border-left: 3px solid #cbd5e1;
+    font-size: 1.05rem;
+}
+
+.bio {
+    font-size: 0.95rem;
+    color: #334155;
+}
+
+/* --- Hintergrund-Seite --- */
+.question-box {
+    background-color: #f1f5f9;
+    border-left: 4px solid #00a0e0;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.question-box h3 {
+    font-size: 1.2rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.question-box p {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #00a0e0;
+}
+
+.sub-heading {
+    font-size: 1.3rem;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    border-left: 4px solid #e65c00;
+    padding-left: 12px;
+    color: #243444;
+}
+
+/* --- Unterzeichner-Seite --- */
+.sig-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sig-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #243444;
+    border-radius: 6px;
+    padding: 18px 20px;
+}
+
+.sig-header {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.sig-name {
+    font-weight: 700;
+    color: #1a2530;
+}
+
+.sig-title {
+    color: #475569;
+    font-size: 0.95rem;
+    margin-left: 5px;
+}
+
+.sig-quote {
+    font-style: italic;
+    color: #334155;
+    margin-top: 8px;
+    padding-left: 12px;
+    border-left: 2px solid #cbd5e1;
+    font-size: 0.98rem;
+}
