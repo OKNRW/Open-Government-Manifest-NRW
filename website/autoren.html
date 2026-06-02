@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoren – Open Government Manifest NRW</title>
+    <style>
+        /* --- Basis-Setup & Typografie --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #1a2530;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: 700;
+        }
+
+        /* --- Header (Zentriert) --- */
+        header {
+            background-color: #243444;
+            color: #ffffff;
+            padding: 30px 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-bars {
+            display: flex;
+            gap: 4px;
+        }
+
+        .bar {
+            width: 25px;
+            height: 6px;
+        }
+        .bar.orange { background-color: #e65c00; }
+        .bar.blue   { background-color: #00a0e0; }
+        .bar.purple { background-color: #9900cc; }
+        .bar.green  { background-color: #669933; }
+
+        .logo-text h1 {
+            font-size: 1.4rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .logo-text p {
+            font-size: 0.85rem;
+            color: #a0b0c0;
+            max-width: 500px;
+        }
+
+        /* --- Main Content --- */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            color: #243444;
+            margin-top: 20px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #243444;
+            padding-bottom: 8px;
+        }
+
+        /* --- Personen-Karten --- */
+        .person-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .person-card.kern {
+            border-left: 5px solid #00a0e0;
+        }
+
+        .person-card.unterstuetzer {
+            border-left: 5px solid #669933;
+        }
+
+        .person-header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .avatar-placeholder {
+            width: 60px;
+            height: 60px;
+            background-color: #cbd5e1;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #475569;
+            font-weight: bold;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+
+        .person-name {
+            font-size: 1.3rem;
+            color: #243444;
+            font-weight: 700;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #475569;
+            position: relative;
+            padding-left: 15px;
+            border-left: 3px solid #cbd5e1;
+            font-size: 1.05rem;
+        }
+
+        .bio {
+            font-size: 0.95rem;
+            color: #334155;
+        }
+
+        /* --- Footer (Zentriert) --- */
+        footer {
+            background-color: #243444;
+            color: #ffffff;
+            padding: 40px 20px;
+            font-size: 0.85rem;
+            margin-top: 40px;
+        }
+
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+            text-align: center;
+        }
+
+        .footer-logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-logo span {
+            font-weight: bold;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #a0b0c0;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-bars">
+                <div class="bar orange"></div>
+                <div class="bar blue"></div>
+                <div class="bar purple"></div>
+                <div class="bar green"></div>
+            </div>
+            <div class="logo-text">
+                <h1>Open Government Manifest NRW</h1>
+                <p>Autoren & Unterstützerinnen des Manifests</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <h2 class="section-title">Kernautoren</h2>
+
+        <!-- Dieter Hofmann -->
+        <div class="person-card kern">
+            <div class="person-header">
+                <div class="avatar-placeholder">DH</div>
+                <div class="person-name">Dieter Hofmann</div>
+            </div>
+            <div class="quote">„Ich bin dabei, weil ich überzeugt bin, dass sich unsere Gesellschaft durch Offenheit und Kooperation positiv entwickelt.“</div>
+            <div class="bio">Dieter Hofmann hat aus seinem Engagement für den Wuppertaler Bürgerhaushalt heraus das Netzwerk „Offene Kommunen.NRW“ initiiert. Nach nunmehr fünf Jahren trägt sich das Netz und entwickelt eine zunehmende Strahlkraft in die politischen Entscheidungsgremien. Im Zentrum stehen Transparenz, Beteiligung und eine offene Haltung gegenüber der Bevölkerung.</div>
+        </div>
+
+        <!-- Agnes Mainka -->
+        <div class="person-card kern">
+            <div class="person-header">
+                <div class="avatar-placeholder">AM</div>
+                <div class="person-name">Agnes Mainka</div>
+            </div>
+            <div class="quote">„Wir leben in einer spannenden Zeit, die durch den zunehmenden Einsatz von Technologien verändert und geprägt wird. Durch meine Erfahrung in den Fachbereichen IT, Raumplanung, Sozialwissenschaft und Wirtschaft und durch Besuche auf Konferenzen zu „Open Government“ und „Smart City“ ist ersichtlich, dass es einen globalen Trend auf der Gesellschafts-, Wirtschafts-, und Regierungsebene gibt, wir aber in Deutschland noch einen weiten Weg vor uns haben. Ich würde gerne meinen Beitrag dazu leisten, dass unseren Kommunen der Weg zur Digitalisierung, erweitertem Wissensmanagement bis hin zur „Offenen Kommune“ ermöglicht wird.“</div>
+            <div class="bio">Agnes Mainka ist wissenschaftliche Mitarbeiterin an der Heinrich-Heine Universität, Düsseldorf, in der Abteilung für Informationswissenschaft. In ihrer Forschung hat sie sich mit dem digitalen Angebot städtischer Institutionen beschäftigt. Im Fokus lagen dabei Weltstädte, die sich den Herausforderungen der heutigen Wissensgesellschaft stellen. Welche Informationen sind digital abrufbar? Wie können Bürger und Unternehmen mit/in der Stadt kommunizieren? Machen mobile Apps und offene Daten eine Stadt lebenswerter?</div>
+        </div>
+
+        <!-- Damian Paderta -->
+        <div class="person-card kern">
+            <div class="person-header">
+                <div class="avatar-placeholder">DP</div>
+                <div class="person-name">Damian Paderta</div>
+            </div>
+            <div class="quote">„Ich bin dabei, weil offenes Regierungshandeln die Basis für eine open Gesellschaft ist.“</div>
+            <div class="bio">Damian Paderta ist Digitalberater und beschäftigt sich als Web-Geograph unter openall.info und dem OK LAB Bonn mit den Themen Smart City, Open Data und Open Government.</div>
+        </div>
+
+        <!-- Christopher Reinbothe -->
+        <div class="person-card kern">
+            <div class="person-header">
+                <div class="avatar-placeholder">CR</div>
+                <div class="person-name">Christopher Reinbothe</div>
+            </div>
+            <div class="quote">„Ich bin dabei, weil es wichtig ist Bürgern ihre Stadt wieder schmackhaft zu machen.“</div>
+            <div class="bio">Christopher Reinbothe ist Mitbegründer von Opendatal, der Opendata-Initiative Wuppertals. Im Kreativcluster Utopiastadt und als Teil des Open Knowledge Labs, aber auch im beruflichen Alltag, arbeitet der Kommunikationsdesigner an der Entwicklung einer digitalen Gesellschaft.</div>
+        </div>
+
+        <!-- Dr. Anke Knopp -->
+        <div class="person-card kern">
+            <div class="person-header">
+                <div class="avatar-placeholder">AK</div>
+                <div class="person-name">Dr. Anke Knopp</div>
+            </div>
+            <div class="quote">„Ich bin dabei, weil nur eine Politik 2.0 der konsequenten Öffnung und Beteiligung in der Lage ist, unsere Demokratie auf ein neues Level zu bringen, die komplexen Herausforderungen einer globalisierten Welt anzunehmen und zukunftsfähig für alle zu gestalten.“</div>
+            <div class="bio">Dr. Anke Knopp ist Bloggerin und aktiv in der Initiative „Demokratie wagen“, die sich für einen Bürgerhaushalt in ihrer Stadt engagieren. Sie schreibt zu Politik 2.0, Offene Daten, digitale Transformation im Alltagsleben sowie zu Smart City und Smart Country.</div>
+        </div>
+
+        <h2 class="section-title">Unterstützer und Unterstützerinnen</h2>
+
+        <!-- Dr. Ole Wintermann -->
+        <div class="person-card unterstuetzer">
+            <div class="person-header">
+                <div class="avatar-placeholder">OW</div>
+                <div class="person-name">Dr. Ole Wintermann</div>
+            </div>
+            <div class="quote">„Ich unterstütze das Manifest, weil wir zukünftige globale Herausforderungen nur mit den Ideen aller Menschen und nicht nur den Vorstellungen einer Elite bewältigen können.“</div>
+            <div class="bio">Dr. Ole Wintermann hat für die Bertelsmann Stiftung die Plattform Futurechallenges.org aufgebaut. Er ist Co-Founder der Menschenrechtsplattform www.irrepressiblevoices.org und befasst sich mit Fragen der Globalisierung, der Demografie, der Freiheit des Netzes und OER.</div>
+        </div>
+
+        <!-- Thorsten Sterk -->
+        <div class="person-card unterstuetzer">
+            <div class="person-header">
+                <div class="avatar-placeholder">TS</div>
+                <div class="person-name">Thorsten Sterk</div>
+            </div>
+            <div class="quote">„Als Freund der direkten Demokratie ist es mir wichtig, dass Bürgerinnen und Bürger informiert kompetente Entscheidungen treffen können. Transparenz in Politik und Verwaltung sind eine wichtige Voraussetzung dafür. Diese Transparenz ist außerdem ein Beitrag zum Abbau von Vorurteilen und Voreingenommenheit gegenüber denen, die in den Kommunen Entscheidungen vorbereiten und treffen. Mehr Vertrauen hilft Bürgern, Verwaltungen, Politik und letztlich der gesamten Demokratie.“</div>
+            <div class="bio">Pressesprecher von Mehr Demokratie - Landesverband NRW.</div>
+        </div>
+
+        <!-- Claus Arndt -->
+        <div class="person-card unterstuetzer">
+            <div class="person-header">
+                <div class="avatar-placeholder">CA</div>
+                <div class="person-name">Claus Arndt</div>
+            </div>
+            <div class="quote">„Ich unterstütze das Manifest, weil Offenheit im Handeln und Geiste wichtige Impulse für eine kreative Weiterentwicklung in allen Lebensbereichen setzen kann.“</div>
+            <div class="bio">Claus Arndt setzt sich im kommunalen Bereich seit Jahren für digitale Themen sowie eine offene und transparente Verwaltung ein.</div>
+        </div>
+
+        <!-- Benjamin Fadavian -->
+        <div class="person-card unterstuetzer">
+            <div class="person-header">
+                <div class="avatar-placeholder">BF</div>
+                <div class="person-name">Benjamin Fadavian</div>
+            </div>
+            <div class="quote">„Ich unterstütze das Manifest, weil eine Kultur der Offenheit und Transparenz notwendige Voraussetzung für Innovation und Teilhabe ist.“</div>
+            <div class="bio">Benjamin Fadavian - Wissenschaftlicher Mitarbeiter am Seminar für Staatsphilosophie und Rechtspolitik der Universität zu Köln, Referent der Geschäftsführung bei regio iT GmbH in Aachen.</div>
+        </div>
+
+        <!-- Dr. Christian Knebel -->
+        <div class="person-card unterstuetzer">
+            <div class="person-header">
+                <div class="avatar-placeholder">CK</div>
+                <div class="person-name">Dr. Christian Knebel</div>
+            </div>
+            <div class="quote">„Ich unterstütze das Manifest, weil es meinen Vorstellungen von „Offenheit“ sowohl als Bürger als auch als Unternehmer entspricht. Als IT-Dienstleister für die Öffentliche Hand passt das Manifest zudem voll und ganz in unsere Unternehmensstrategie und unser Leistungsportfolio.“</div>
+            <div class="bio">Dr. Christian Knebel is Geschäftsführer der publicplan GmbH, einer Firma, die Web- und Open-Source-basierte Softwarelösungen für Institutionen des öffentlichen Sektors erstellt.</div>
+        </div>
+
+        <!-- Oliver Bildesheim -->
+        <div class="person-card unterstuetzer">
+            <div class="person-header">
+                <div class="avatar-placeholder">OB</div>
+                <div class="person-name">Oliver Bildesheim</div>
+            </div>
+            <div class="quote">„Transparenz, Beteiligung und Zusammenarbeit werden stetig erfolgskritischer für eine nachhaltige, auf breiter Unterstützung basierende Gestaltung und Entwicklung unserer Gesellschaft. Für den einzelnen Menschen wirkt sich dies in besonderer Weise in seinem direkten Umfeld aus - auf seine Ausbildung, seine Arbeit, sein Privatleben. In der Stadt, im Kreis, im Land. Daher stellen gerade die Kommunen und Akteure vor Ort entscheidende Treiber für die erforderliche Öffnung des Verwaltungs- und Regierungshandelns im digitalen wie im „echten“ Leben dar. Deshalb unterstütze ich dieses Manifest.“</div>
+            <div class="bio">Oliver Bildesheim beschäftigt sich seit 20 Jahren mit der Erschließung und Nutzung der Internet-Technologien in der Wirtschaft und im öffentlichen Sektor. Sein Schwerpunkt liegt in der Beratung und Unterstützung von Ministerien und Behörden in den Themenbereichen E-Government und Open Government.</div>
+        </div>
+
+        <!-- Rainer Striewski -->
+        <div class="person-card unterstuetzer">
+            <div class="person-header">
+                <div class="avatar-placeholder">RS</div>
+                <div class="person-name">Rainer Striewski</div>
+            </div>
+            <div class="quote">„Als (Daten-) Journalist bin ich immer noch begeistert darüber, welche neuen Möglichkeiten in den vergangenen Jahren mit der Öffnung von Daten entstanden sind - für Journalisten, aber auch die Öffentlichkeit. So entstehen in vielen Medien ganz neue Geschichten, die vorher so nicht hätten erzählt werden können.“</div>
+            <div class="bio">(Daten-) Journalist aus Köln.</div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-bars">
+                    <div class="bar orange"></div>
+                    <div class="bar blue"></div>
+                    <div class="bar purple"></div>
+                    <div class="bar green"></div>
+                </div>
+                <span>OGMNRW</span>
+            </div>
+            <nav class="footer-links">
+                <a href="#">Manifest</a>
+                <a href="#">Autoren</a>
+                <a href="#">Unterstützer</a>
+                <a href="#">Unterzeichnen</a>
+                <a href="#">Kontakt</a>
+                <a href="#">Impressum</a>
+            </nav>
+        </div>
+    </footer>
+
+</body>
+</html>
