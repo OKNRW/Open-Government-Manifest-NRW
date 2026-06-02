@@ -1,0 +1,335 @@
+/* --- Basis-Setup & Typografie --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a2530;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+
+/* --- Header (Zentriert) --- */
+header {
+    background-color: #243444;
+    color: #ffffff;
+    padding: 30px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-bars {
+    display: flex;
+    gap: 4px;
+}
+
+.bar {
+    width: 25px;
+    height: 6px;
+}
+.bar.orange { background-color: #e65c00; }
+.bar.blue   { background-color: #00a0e0; }
+.bar.purple { background-color: #9900cc; }
+.bar.green  { background-color: #669933; }
+
+.logo-text h1 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.logo-text p {
+    font-size: 0.85rem;
+    color: #a0b0c0;
+    max-width: 500px;
+}
+
+.menu-toggle {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* --- Main Content (Intro) --- */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.intro-section {
+    margin-bottom: 40px;
+}
+
+.intro-section h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #243444;
+}
+
+.intro-section p {
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.download-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #00a0e0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+/* --- Prinzipien Header --- */
+.prinzipien-header {
+    background-color: #243444;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* --- Haupt-Blöcke (Prinzipien) --- */
+.prinzip-section {
+    color: white;
+    padding: 40px 20px;
+}
+
+.prinzip-main-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.prinzip-badge {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.prinzip-section h3 {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.prinzip-section > .prinzip-main-content > p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    opacity: 0.95;
+    margin-bottom: 30px;
+}
+
+/* --- Absatz-Akkordeons --- */
+.sub-accordion {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sub-accordion-header {
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    user-select: none;
+}
+
+.sub-accordion-header:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sub-accordion-icon {
+    font-size: 0.8rem;
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+
+.sub-accordion.active .sub-accordion-icon {
+    transform: rotate(90deg);
+}
+
+.sub-accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-out;
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.sub-accordion.active .sub-accordion-body {
+    max-height: 300px;
+}
+
+.sub-accordion-content {
+    padding: 15px 20px 20px 20px;
+    font-size: 1rem;
+    opacity: 0.9;
+    line-height: 1.5;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* --- Link-Sektionen im Block --- */
+.info-links {
+    margin-top: 35px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+}
+
+.info-links h4 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.info-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.info-links a {
+    color: white;
+    text-decoration: underline;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.info-links a:hover {
+    opacity: 1;
+}
+
+/* Farb-Zuweisungen */
+.p1 { background-color: #e65c00; }
+.p2 { background-color: #00a0e0; }
+.p3 { background-color: #9900cc; }
+.p4 { background-color: #669933; }
+
+/* --- Call to Action & Sign Section --- */
+.cta-section {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+}
+
+.cta-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #243444;
+}
+
+.cta-section p {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #555;
+}
+
+.mail-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f0f4f8;
+    border: 1px solid #cbd5e1;
+    color: #243444;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.mail-icon-btn:hover {
+    background-color: #e2e8f0;
+}
+
+/* --- Footer (Zentriert) --- */
+footer {
+    background-color: #243444;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-size: 0.85rem;
+}
+
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-logo span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #a0b0c0;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
