@@ -350,11 +350,12 @@ footer {
 
 /* --- Personen-Fotos --- */
 .person-photo {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
     object-fit: cover;
-    flex-shrink: 0;
+    display: block;
 }
 
 /* --- Organisations-Logos --- */
@@ -375,9 +376,7 @@ footer {
 }
 
 .org-logo {
-    max-height: 65px;
-    max-width: 160px;
-    width: auto;
+    max-width: 50%;
     height: auto;
     object-fit: contain;
     opacity: 0.8;
@@ -410,8 +409,9 @@ footer {
 
 .person-header {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
 }
 
 .avatar-placeholder {
