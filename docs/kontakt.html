@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt – Open Government Manifest NRW</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .contact-form {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            color: #243444;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 1rem;
+            color: #1a2530;
+            background: #ffffff;
+            transition: border-color 0.2s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #00a0e0;
+        }
+        .form-group textarea {
+            min-height: 140px;
+            resize: vertical;
+        }
+        .form-submit {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #00a0e0;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: background-color 0.2s;
+        }
+        .form-submit:hover {
+            background-color: #0082b8;
+        }
+        .contact-info {
+            background: #f1f5f9;
+            border-left: 4px solid #00a0e0;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 0 6px 6px 0;
+        }
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+        .contact-info p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="pics/logo_ogmnrw_5.svg" alt="Open Government Manifest NRW" class="header-logo"></a>
+    </header>
+
+    <nav class="page-nav">
+        <a href="index.html">Manifest</a>
+        <a href="hintergrund.html">Hintergrund</a>
+        <a href="autoren.html">Autoren</a>
+        <a href="unterzeichner.html">Unterzeichner</a>
+        <a href="kontakt.html" class="active">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+    </nav>
+
+    <main class="container">
+
+        <h2 class="section-title">Kontakt</h2>
+
+        <p>Sie möchten das Manifest unterzeichnen, Fragen stellen oder sich am Netzwerk beteiligen? Wir freuen uns über Ihre Nachricht.</p>
+
+        <form class="contact-form" action="mailto:info@ogmnrw.de" method="post" enctype="text/plain">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Ihr vollständiger Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail-Adresse</label>
+                <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
+            </div>
+            <div class="form-group">
+                <label for="betreff">Betreff</label>
+                <select id="betreff" name="betreff">
+                    <option value="unterzeichnen">Manifest unterzeichnen</option>
+                    <option value="frage">Allgemeine Anfrage</option>
+                    <option value="mitarbeit">Mitarbeit im Netzwerk</option>
+                    <option value="presse">Presseanfrage</option>
+                    <option value="sonstiges">Sonstiges</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="nachricht">Nachricht</label>
+                <textarea id="nachricht" name="nachricht" placeholder="Ihre Nachricht an uns..." required></textarea>
+            </div>
+            <button type="submit" class="form-submit">Nachricht senden</button>
+        </form>
+
+        <div class="contact-info">
+            <p><strong>Netzwerk „Offene Kommunen.NRW"</strong></p>
+            <p>Wir setzen uns für Transparenz, Beteiligung und offenes Regierungshandeln in Nordrhein-Westfalen ein.</p>
+            <p>Weitere Informationen finden Sie auf der <a href="hintergrund.html" style="color:#00a0e0;">Hintergrundseite</a> sowie bei den <a href="autoren.html" style="color:#00a0e0;">Autorinnen und Autoren</a> des Manifests.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-bars">
+                    <div class="bar orange"></div>
+                    <div class="bar blue"></div>
+                    <div class="bar purple"></div>
+                    <div class="bar green"></div>
+                </div>
+                <span>OGMNRW</span>
+            </div>
+            <nav class="footer-links">
+                <a href="index.html">Manifest</a>
+                <a href="hintergrund.html">Hintergrund</a>
+                <a href="autoren.html">Autoren</a>
+                <a href="unterzeichner.html">Unterzeichner</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="impressum.html">Impressum</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
