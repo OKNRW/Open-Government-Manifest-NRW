@@ -16,50 +16,20 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 
-/* --- Header (Zentriert) --- */
+/* --- Header --- */
 header {
     background-color: #243444;
-    color: #ffffff;
-    padding: 30px 20px;
-    position: relative;
+    padding: 25px 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
-.logo-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo-bars {
-    display: flex;
-    gap: 4px;
-}
-
-.bar {
-    width: 25px;
-    height: 6px;
-}
-.bar.orange { background-color: #e65c00; }
-.bar.blue   { background-color: #00a0e0; }
-.bar.purple { background-color: #9900cc; }
-.bar.green  { background-color: #669933; }
-
-.logo-text h1 {
-    font-size: 1.4rem;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-}
-
-.logo-text p {
-    font-size: 0.85rem;
-    color: #a0b0c0;
-    max-width: 500px;
+.header-logo {
+    max-width: 480px;
+    width: 85%;
+    height: auto;
+    display: block;
 }
 
 .menu-toggle {
@@ -376,6 +346,46 @@ footer {
 .container > p {
     margin-bottom: 20px;
     font-size: 1.05rem;
+}
+
+/* --- Personen-Fotos --- */
+.person-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* --- Organisations-Logos --- */
+.org-logos-section {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #e2e8f0;
+    text-align: center;
+}
+
+.org-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px 40px;
+    margin-top: 25px;
+}
+
+.org-logo {
+    max-height: 65px;
+    max-width: 160px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+
+.org-logo:hover {
+    opacity: 1;
 }
 
 /* --- Personen-Karten (Autoren-Seite) --- */
