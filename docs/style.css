@@ -26,8 +26,8 @@ header {
 }
 
 .header-logo {
-    max-width: 480px;
-    width: 85%;
+    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
 }
