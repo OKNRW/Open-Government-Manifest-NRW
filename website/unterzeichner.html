@@ -4,175 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unterzeichner – Open Government Manifest NRW</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: #1a2530;
-            background-color: #ffffff;
-            line-height: 1.6;
-        }
-
-        h1, h2, h3 {
-            font-weight: 700;
-        }
-
-        header {
-            background-color: #243444;
-            color: #ffffff;
-            padding: 30px 20px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .logo-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo-bars {
-            display: flex;
-            gap: 4px;
-        }
-
-        .bar {
-            width: 25px;
-            height: 6px;
-        }
-        .bar.orange { background-color: #e65c00; }
-        .bar.blue   { background-color: #00a0e0; }
-        .bar.purple { background-color: #9900cc; }
-        .bar.green  { background-color: #669933; }
-
-        .logo-text h1 {
-            font-size: 1.4rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 5px;
-        }
-
-        .logo-text p {
-            font-size: 0.85rem;
-            color: #a0b0c0;
-            max-width: 500px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .section-title {
-            font-size: 1.6rem;
-            color: #243444;
-            margin-top: 10px;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 2px solid #243444;
-            padding-bottom: 8px;
-            text-align: center;
-        }
-
-        .sig-list {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .sig-card {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-            border-left: 4px solid #243444;
-            border-radius: 6px;
-            padding: 18px 20px;
-        }
-
-        .sig-header {
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-        }
-
-        .sig-name {
-            font-weight: 700;
-            color: #1a2530;
-        }
-
-        .sig-title {
-            color: #475569;
-            font-size: 0.95rem;
-            margin-left: 5px;
-        }
-
-        .sig-quote {
-            font-style: italic;
-            color: #334155;
-            margin-top: 8px;
-            padding-left: 12px;
-            border-left: 2px solid #cbd5e1;
-            font-size: 0.98rem;
-        }
-
-        footer {
-            background-color: #243444;
-            color: #ffffff;
-            padding: 40px 20px;
-            font-size: 0.85rem;
-            margin-top: 50px;
-        }
-
-        .footer-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
-            text-align: center;
-        }
-
-        .footer-logo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .footer-logo span {
-            font-weight: bold;
-            font-size: 1.2rem;
-            letter-spacing: 1px;
-        }
-
-        .footer-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .footer-links a {
-            color: #a0b0c0;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .footer-links a:hover {
-            color: #ffffff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -191,401 +23,434 @@
         </div>
     </header>
 
+    <nav class="page-nav">
+        <a href="index.html">Manifest</a>
+        <a href="hintergrund.html">Hintergrund</a>
+        <a href="autoren.html">Autoren</a>
+        <a href="unterzeichner.html" class="active">Unterzeichner</a>
+    </nav>
+
     <main class="container">
         <h2 class="section-title">Unterzeichnerinnen und Unterzeichner</h2>
-        
+
         <div class="sig-list">
-            
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Denis Kurz</span> <span class="sig-title">| Do-FOSS</span>
-            </div>
-            <div class="sig-quote">„Das Manifest bettet Freie und Offene Software in einen staatlichen Gesamtkontext ein. Eine offene digitale Infrastruktur ist die technische Basis eines Open-Government-Konzepts.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Till Schäfer</span> <span class="sig-title">| Repräsentant der Bürgerinitiative Do-FOSS</span>
-            </div>
-            <div class="sig-quote">„Offenheit im Sinne der Partizipation, Transparenz und Vertrauen sind wichtige Grundpfeiler für eine gemeinsame und nachhaltige Gestaltung des (digitalen) Lebensraumes. Wir sehen Offene Kommunen.NRW und das Open Government Manifest NRW als wichtige Bausteine für eine zielgerichtete Realisierung dieser Werte.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Christian Nähle</span> <span class="sig-title">| Geschäftsführer von Do-FOSS</span>
-            </div>
-            <div class="sig-quote">„Open als Prinzip braucht ein Rahmenwerk. Dies ist mit dem Manifest gelungen.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Dr. Richard Ralfs</span> <span class="sig-title">| Bundesarbeitsgemeinschaft Medien/Netz Bündnis 90 / DIE GRÜNEN</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Kevin Arutyunyan</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Karl-Matthias Pick</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Arne Kamola</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Tobias Siebenlist</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Paul Pawlowski</span> <span class="sig-title">| Koordinator Direkte Demokratie Deutschland, DiDeD.de</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Michael Fromm</span> <span class="sig-title">| Aktivist bei DiEM25 / Regionalgruppe „Bergisches Land“</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Anke Johannsen</span> <span class="sig-title">| Kreativschaffende</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Andreas Mucke</span> <span class="sig-title">| Oberbürgermeister der Stadt Wuppertal</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Caroline Paulick-Thiel</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Olaf Konrad</span> <span class="sig-title">| Bürger und Teil einer Kommunalverwaltung – Wandler zwischen den „Welten“</span>
-            </div>
-            <div class="sig-quote">„Ich unterstützt das Manifest weil es hier noch viele Löcher zu bohren gilt.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Simon Welslau</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Dietmar Koether</span>
-            </div>
-            <div class="sig-quote">„Ich unterstütze das Manifest, weil ich die Inhalte teile und unterstütze!“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Markus Drenger</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Dirk Blauhut</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Patrick Schiffer</span> <span class="sig-title">| Vorsitzender Piratenpartei NRW & OK Lab Düsseldorf</span>
-            </div>
-            <div class="sig-quote">„Ich unterstütze das Manifest, weil ich seit Jahren mehr Transparenz, Kollaboration und Partizipation fordere. Open Government ist längst eine international anerkannte Strategie für innovative und moderne Verwaltung geworden. Ich möchte dazu beitragen, Barrieren abzubauen und den Prozess hin zu einer offenen Gesellschaft auch in NRW zu beschleunigen.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Klaus Burmeister</span>
-            </div>
-            <div class="sig-quote">„Offenheit und Teilhabe sind die Grundlage bürgerschaftlichen Engagements. Open Government greift allerdings zu kurz, wenn unternehmerisches Handeln nicht integriert wird.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Vaclav Demling</span>
-            </div>
-            <div class="sig-quote">„Ich unterstütze das Manifest, weil eine starke Gesellschaft offen und eine offene Gesellschaft stark ist.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Daniel Weber</span>
-            </div>
-            <div class="sig-quote">„Ich möchte die Digitalisierung und die damit verbundene Kompetenzentwicklung bereits im Kleinkindalter vorantreiben.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Kirsten Witte</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Alfa Ersosi</span>
-            </div>
-            <div class="sig-quote">„Ich unterstütze das Open Government Manifest NRW, weil ich für Offenheit, Transparenz und Bürgerbeteiligung stehe.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Stefan Müller</span> <span class="sig-title">| Bündnis 90 /Die Grünen Düsseldorf</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Karl-Heinz Breuch</span>
-            </div>
-            <div class="sig-quote">„Demokratie nur offen und transparent funktioniert. Die Digitalisierung bietet eine nie dagewesen Möglichkeit Demokratie zu leben. Wir sollten diese Chance nutzen.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Maxim Loick</span> <span class="sig-title">| Sprecher AK Digitale Gesellschaft der SPD Bonn</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Peter Wicke</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Peter Ruhenstroth-Bauer</span> <span class="sig-title">| Rechtsanwalt, Kommunikations-und Strategieberatung</span>
-            </div>
-            <div class="sig-quote">„Zukunftsorientierte Politik wird – egal auf welcher staatlichen Ebene – nur gelingen, wenn die Kompetenzen der BürgerInnen von Anfang an einbezogen werden. Dafür steht das Manifest.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Rolf Lührs</span>
-            </div>
-            <div class="sig-quote">„Ich unterstütze das Open Government Manifest NRW, weil Digitalisierung und Partizipation das Gebot der Stunde sind.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Dr. Detlef Vonde</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Michael Felstau</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Thomas Nowak</span> <span class="sig-title">| Selbständig</span>
-            </div>
-            <div class="sig-quote">„Weil alles einfach einfacher, günstiger, schneller und qualitativ besser werden würde.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Matthias Greiling</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Carsten Köppl</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Thomas Tursics</span> <span class="sig-title">| OKLab Berlin – Lead</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Michael Lobeck</span> <span class="sig-title">| Wissenschaftler (Universität Bonn) und Berater Stadtentwicklung (promediare.de)</span>
-            </div>
-            <div class="sig-quote">„Ich unterstütze das Open Government Manifest NRW, obwohl ich glaube, dass für gutes Regieren neben Transparenz auch Vertraulichkeit nötig ist – wir aber ganz sicher mehr Transparenz und Offenheit brauchen – verbunden mit einer neuen, an Austausch orientierten, Kommunikationskultur.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Panagiotis Paschalis</span> <span class="sig-title">| Dezernent für Bürgerbeteiligung Stadt Wuppertal</span>
-            </div>
-            <div class="sig-quote">„Ich unterzeichne, weil auch die Kommunalverwaltung ein wichtiger Akteur des Wandels ist. Als Dezernent für Bürgerbeteiligung möchte ich an der Umsetzung des Open Government Manifests aktiv mitwirken.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Heiko Ellersiek</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Anne Katrin Sommer</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Klaus Dieker</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Matthias Wanner</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Stefan Knopp</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Dominic Petrak</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Jan Niko Kirschbaum</span>
-            </div>
-            <div class="sig-quote">„Das 21. Jahrhundert und die Digitalisierung neue Werkzeuge für die Demokratie bereitstellen. Es wäre töricht, in alten Denkweisen zu verharren.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Steve König</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Gisela von Mutius</span> <span class="sig-title">| Mitglied des NRW Landesvorstands von „Mehr Demokratie e.V.“</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Lea Falk</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Martin Heldberg</span>
-            </div>
-            <div class="sig-quote">„Ich unterstütze das Manifest, weil eine offene und einfachere Kommunikation zu einer guten Demokratie gehört.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Sebastian Goerke</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Wolfgang Päehler</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Ulrich Greveler</span> <span class="sig-title">| Hochschullehrer</span>
-            </div>
-            <div class="sig-quote">„Ich unterstütze das Manifest, weil ich digitale Bürgerbeteiligung für unverzichtbar halte.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Robert Hotstegs</span> <span class="sig-title">| Fachanwalt für Verwaltungsrecht, Mediator</span>
-            </div>
-            <div class="sig-quote">„Informationen sind der Anfang von allem. Fehlende Informationen sind der Anfang allen Ärgers. Das gilt für Bürgerinnen und Bürger, für Bürgerinitiativen und Verwaltungen. Transparenz und mehr Bürgerbeteiligung können Raum für neue Ideen schaffen. Die alte „Idee“ der Geheimniskrämerei hat sich nicht bewährt.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Torsten Radtke</span>
-            </div>
-            <div class="sig-quote">„Weil der Weg richtig ist für unsere Zukunft!“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Philipp Jüttner</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Dr. Tobias Knobloch</span> <span class="sig-title">| Projektleiter Open Data & Privacy bei der stiftung neue verantwortung</span>
-            </div>
-            <div class="sig-quote">„Ich unterstütze das #ogmnrw, weil die Zielsetzung sehr richtig ist, und weil ich diese von Akteuren aus unterschiedlichen gesellschaftlichen Bereichen getragene Initiative klasse finde.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Ralf Gloerfeld</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Jürgen Droop</span> <span class="sig-title">| Mitglied bei Demokratie wagen!</span>
-            </div>
-            <div class="sig-quote">„Zu einer Gesellschaft im Geist der Offenheit und Selbstverantwortung gehören auch offene Daten und der Wille zu einem Open Government.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Sebastian Molls</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Cathy Klappert</span> <span class="sig-title">| Opendataaktivistin, Utopistin, Wuppertal!</span>
-            </div>
-            <div class="sig-quote">„Das ist ein wichtiger Schritt in Richtung einer offenen Gesellschaft.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Martin Schurig</span> <span class="sig-title">| OK Lab Ruhrgebiet</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Jürgen Zimmermann</span> <span class="sig-title">| Blogger</span>
-            </div>
-            <div class="sig-quote">„Ich unterstütze das Manifest weil Offenheit notwendig und zukunftsweisend ist.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Gerald Pape</span> <span class="sig-title">| Lab Lead Code for Münster</span>
-            </div>
-            
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Kai Wieland</span> <span class="sig-title">| OK Lab Karlsruhe</span>
-            </div>
-            <div class="sig-quote">„Ich unterstütze das Manifest weil Offenheit Zukunft bedeutet.“</div>
-        </div>
-        <div class="sig-card">
-            <div class="sig-header">
-                <span class="sig-name">Timo Jeske</span> <span class="sig-title">| OK Lab Niederrhein – Lead</span>
-            </div>
-            
-        </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Denis Kurz</span> <span class="sig-title">| Do-FOSS</span>
+                </div>
+                <div class="sig-quote">„Das Manifest bettet Freie und Offene Software in einen staatlichen Gesamtkontext ein. Eine offene digitale Infrastruktur ist die technische Basis eines Open-Government-Konzepts."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Till Schäfer</span> <span class="sig-title">| Repräsentant der Bürgerinitiative Do-FOSS</span>
+                </div>
+                <div class="sig-quote">„Offenheit im Sinne der Partizipation, Transparenz und Vertrauen sind wichtige Grundpfeiler für eine gemeinsame und nachhaltige Gestaltung des (digitalen) Lebensraumes. Wir sehen Offene Kommunen.NRW und das Open Government Manifest NRW als wichtige Bausteine für eine zielgerichtete Realisierung dieser Werte."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Christian Nähle</span> <span class="sig-title">| Geschäftsführer von Do-FOSS</span>
+                </div>
+                <div class="sig-quote">„Open als Prinzip braucht ein Rahmenwerk. Dies ist mit dem Manifest gelungen."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Dr. Richard Ralfs</span> <span class="sig-title">| Bundesarbeitsgemeinschaft Medien/Netz Bündnis 90 / DIE GRÜNEN</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Kevin Arutyunyan</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Karl-Matthias Pick</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Arne Kamola</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Tobias Siebenlist</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Paul Pawlowski</span> <span class="sig-title">| Koordinator Direkte Demokratie Deutschland, DiDeD.de</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Michael Fromm</span> <span class="sig-title">| Aktivist bei DiEM25 / Regionalgruppe „Bergisches Land"</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Anke Johannsen</span> <span class="sig-title">| Kreativschaffende</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Andreas Mucke</span> <span class="sig-title">| Oberbürgermeister der Stadt Wuppertal</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Caroline Paulick-Thiel</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Olaf Konrad</span> <span class="sig-title">| Bürger und Teil einer Kommunalverwaltung – Wandler zwischen den „Welten"</span>
+                </div>
+                <div class="sig-quote">„Ich unterstützt das Manifest weil es hier noch viele Löcher zu bohren gilt."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Simon Welslau</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Dietmar Koether</span>
+                </div>
+                <div class="sig-quote">„Ich unterstütze das Manifest, weil ich die Inhalte teile und unterstütze!"</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Markus Drenger</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Dirk Blauhut</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Patrick Schiffer</span> <span class="sig-title">| Vorsitzender Piratenpartei NRW & OK Lab Düsseldorf</span>
+                </div>
+                <div class="sig-quote">„Ich unterstütze das Manifest, weil ich seit Jahren mehr Transparenz, Kollaboration und Partizipation fordere. Open Government ist längst eine international anerkannte Strategie für innovative und moderne Verwaltung geworden. Ich möchte dazu beitragen, Barrieren abzubauen und den Prozess hin zu einer offenen Gesellschaft auch in NRW zu beschleunigen."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Klaus Burmeister</span>
+                </div>
+                <div class="sig-quote">„Offenheit und Teilhabe sind die Grundlage bürgerschaftlichen Engagements. Open Government greift allerdings zu kurz, wenn unternehmerisches Handeln nicht integriert wird."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Vaclav Demling</span>
+                </div>
+                <div class="sig-quote">„Ich unterstütze das Manifest, weil eine starke Gesellschaft offen und eine offene Gesellschaft stark ist."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Daniel Weber</span>
+                </div>
+                <div class="sig-quote">„Ich möchte die Digitalisierung und die damit verbundene Kompetenzentwicklung bereits im Kleinkindalter vorantreiben."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Kirsten Witte</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Alfa Ersosi</span>
+                </div>
+                <div class="sig-quote">„Ich unterstütze das Open Government Manifest NRW, weil ich für Offenheit, Transparenz und Bürgerbeteiligung stehe."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Stefan Müller</span> <span class="sig-title">| Bündnis 90 /Die Grünen Düsseldorf</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Karl-Heinz Breuch</span>
+                </div>
+                <div class="sig-quote">„Demokratie nur offen und transparent funktioniert. Die Digitalisierung bietet eine nie dagewesen Möglichkeit Demokratie zu leben. Wir sollten diese Chance nutzen."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Maxim Loick</span> <span class="sig-title">| Sprecher AK Digitale Gesellschaft der SPD Bonn</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Peter Wicke</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Peter Ruhenstroth-Bauer</span> <span class="sig-title">| Rechtsanwalt, Kommunikations-und Strategieberatung</span>
+                </div>
+                <div class="sig-quote">„Zukunftsorientierte Politik wird – egal auf welcher staatlichen Ebene – nur gelingen, wenn die Kompetenzen der BürgerInnen von Anfang an einbezogen werden. Dafür steht das Manifest."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Rolf Lührs</span>
+                </div>
+                <div class="sig-quote">„Ich unterstütze das Open Government Manifest NRW, weil Digitalisierung und Partizipation das Gebot der Stunde sind."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Dr. Detlef Vonde</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Michael Felstau</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Thomas Nowak</span> <span class="sig-title">| Selbständig</span>
+                </div>
+                <div class="sig-quote">„Weil alles einfach einfacher, günstiger, schneller und qualitativ besser werden würde."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Matthias Greiling</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Carsten Köppl</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Thomas Tursics</span> <span class="sig-title">| OKLab Berlin – Lead</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Michael Lobeck</span> <span class="sig-title">| Wissenschaftler (Universität Bonn) und Berater Stadtentwicklung (promediare.de)</span>
+                </div>
+                <div class="sig-quote">„Ich unterstütze das Open Government Manifest NRW, obwohl ich glaube, dass für gutes Regieren neben Transparenz auch Vertraulichkeit nötig ist – wir aber ganz sicher mehr Transparenz und Offenheit brauchen – verbunden mit einer neuen, an Austausch orientierten, Kommunikationskultur."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Panagiotis Paschalis</span> <span class="sig-title">| Dezernent für Bürgerbeteiligung Stadt Wuppertal</span>
+                </div>
+                <div class="sig-quote">„Ich unterzeichne, weil auch die Kommunalverwaltung ein wichtiger Akteur des Wandels ist. Als Dezernent für Bürgerbeteiligung möchte ich an der Umsetzung des Open Government Manifests aktiv mitwirken."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Heiko Ellersiek</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Anne Katrin Sommer</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Klaus Dieker</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Matthias Wanner</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Stefan Knopp</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Dominic Petrak</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Jan Niko Kirschbaum</span>
+                </div>
+                <div class="sig-quote">„Das 21. Jahrhundert und die Digitalisierung neue Werkzeuge für die Demokratie bereitstellen. Es wäre töricht, in alten Denkweisen zu verharren."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Steve König</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Gisela von Mutius</span> <span class="sig-title">| Mitglied des NRW Landesvorstands von „Mehr Demokratie e.V."</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Lea Falk</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Martin Heldberg</span>
+                </div>
+                <div class="sig-quote">„Ich unterstütze das Manifest, weil eine offene und einfachere Kommunikation zu einer guten Demokratie gehört."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Sebastian Goerke</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Wolfgang Päehler</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Ulrich Greveler</span> <span class="sig-title">| Hochschullehrer</span>
+                </div>
+                <div class="sig-quote">„Ich unterstütze das Manifest, weil ich digitale Bürgerbeteiligung für unverzichtbar halte."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Robert Hotstegs</span> <span class="sig-title">| Fachanwalt für Verwaltungsrecht, Mediator</span>
+                </div>
+                <div class="sig-quote">„Informationen sind der Anfang von allem. Fehlende Informationen sind der Anfang allen Ärgers. Das gilt für Bürgerinnen und Bürger, für Bürgerinitiativen und Verwaltungen. Transparenz und mehr Bürgerbeteiligung können Raum für neue Ideen schaffen. Die alte „Idee" der Geheimniskrämerei hat sich nicht bewährt."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Torsten Radtke</span>
+                </div>
+                <div class="sig-quote">„Weil der Weg richtig ist für unsere Zukunft!"</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Philipp Jüttner</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Dr. Tobias Knobloch</span> <span class="sig-title">| Projektleiter Open Data & Privacy bei der stiftung neue verantwortung</span>
+                </div>
+                <div class="sig-quote">„Ich unterstütze das #ogmnrw, weil die Zielsetzung sehr richtig ist, und weil ich diese von Akteuren aus unterschiedlichen gesellschaftlichen Bereichen getragene Initiative klasse finde."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Ralf Gloerfeld</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Jürgen Droop</span> <span class="sig-title">| Mitglied bei Demokratie wagen!</span>
+                </div>
+                <div class="sig-quote">„Zu einer Gesellschaft im Geist der Offenheit und Selbstverantwortung gehören auch offene Daten und der Wille zu einem Open Government."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Sebastian Molls</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Cathy Klappert</span> <span class="sig-title">| Opendataaktivistin, Utopistin, Wuppertal!</span>
+                </div>
+                <div class="sig-quote">„Das ist ein wichtiger Schritt in Richtung einer offenen Gesellschaft."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Martin Schurig</span> <span class="sig-title">| OK Lab Ruhrgebiet</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Jürgen Zimmermann</span> <span class="sig-title">| Blogger</span>
+                </div>
+                <div class="sig-quote">„Ich unterstütze das Manifest weil Offenheit notwendig und zukunftsweisend ist."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Gerald Pape</span> <span class="sig-title">| Lab Lead Code for Münster</span>
+                </div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Kai Wieland</span> <span class="sig-title">| OK Lab Karlsruhe</span>
+                </div>
+                <div class="sig-quote">„Ich unterstütze das Manifest weil Offenheit Zukunft bedeutet."</div>
+            </div>
+
+            <div class="sig-card">
+                <div class="sig-header">
+                    <span class="sig-name">Timo Jeske</span> <span class="sig-title">| OK Lab Niederrhein – Lead</span>
+                </div>
+            </div>
+
         </div>
     </main>
 
@@ -601,15 +466,16 @@
                 <span>OGMNRW</span>
             </div>
             <nav class="footer-links">
-                <a href="#">Manifest</a>
-                <a href="#">Autoren</a>
-                <a href="#">Unterstützer</a>
-                <a href="#">Unterzeichnen</a>
-                <a href="#">Kontakt</a>
+                <a href="index.html">Manifest</a>
+                <a href="hintergrund.html">Hintergrund</a>
+                <a href="autoren.html">Autoren</a>
+                <a href="unterzeichner.html">Unterzeichner</a>
+                <a href="mailto:info@example.com">Kontakt</a>
                 <a href="#">Impressum</a>
             </nav>
         </div>
     </footer>
 
+    <script src="app.js"></script>
 </body>
 </html>

@@ -4,344 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Government Manifest NRW</title>
-    <style>
-        /* --- Basis-Setup & Typografie --- */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: #1a2530;
-            background-color: #ffffff;
-            line-height: 1.6;
-        }
-
-        h1, h2, h3, h4 {
-            font-weight: 700;
-        }
-
-        /* --- Header (Zentriert) --- */
-        header {
-            background-color: #243444;
-            color: #ffffff;
-            padding: 30px 20px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .logo-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo-bars {
-            display: flex;
-            gap: 4px;
-        }
-
-        /* Horizontale Ausrichtung der Balken für das zentrierte Layout */
-        .bar {
-            width: 25px;
-            height: 6px;
-        }
-        .bar.orange { background-color: #e65c00; }
-        .bar.blue   { background-color: #00a0e0; }
-        .bar.purple { background-color: #9900cc; }
-        .bar.green  { background-color: #669933; }
-
-        .logo-text h1 {
-            font-size: 1.4rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 5px;
-        }
-
-        .logo-text p {
-            font-size: 0.85rem;
-            color: #a0b0c0;
-            max-width: 500px;
-        }
-
-        .menu-toggle {
-            position: absolute;
-            right: 20px;
-            top: 30px;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        /* --- Main Content (Intro) --- */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .intro-section {
-            margin-bottom: 40px;
-        }
-
-        .intro-section h2 {
-            font-size: 1.5rem;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            color: #243444;
-        }
-
-        .intro-section p {
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-        }
-
-        .download-link {
-            display: inline-block;
-            margin-top: 15px;
-            color: #00a0e0;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .download-link:hover {
-            text-decoration: underline;
-        }
-
-        /* --- Prinzipien Header --- */
-        .prinzipien-header {
-            background-color: #243444;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            font-size: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        /* --- Haupt-Blöcke (Prinzipien) --- */
-        .prinzip-section {
-            color: white;
-            padding: 40px 20px;
-        }
-
-        .prinzip-main-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .prinzip-badge {
-            display: inline-block;
-            background-color: rgba(255, 255, 255, 0.2);
-            padding: 6px 14px;
-            border-radius: 4px;
-            font-size: 0.9rem;
-            margin-bottom: 15px;
-            font-weight: bold;
-        }
-
-        .prinzip-section h3 {
-            font-size: 1.7rem;
-            text-transform: uppercase;
-            margin-bottom: 15px;
-            letter-spacing: 1px;
-        }
-
-        .prinzip-section > .prinzip-main-content > p {
-            font-size: 1.1rem;
-            max-width: 700px;
-            opacity: 0.95;
-            margin-bottom: 30px;
-        }
-
-        /* --- Neue Absatz-Akkordeons (Sub-Accordion) --- */
-        .sub-accordion {
-            background-color: rgba(0, 0, 0, 0.15);
-            border-radius: 6px;
-            margin-bottom: 12px;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .sub-accordion-header {
-            padding: 15px 20px;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 15px;
-            font-size: 1.05rem;
-            font-weight: 500;
-            user-select: none;
-        }
-
-        .sub-accordion-header:hover {
-            background-color: rgba(255, 255, 255, 0.05);
-        }
-
-        .sub-accordion-icon {
-            font-size: 0.8rem;
-            transition: transform 0.2s ease;
-            flex-shrink: 0;
-        }
-
-        .sub-accordion.active .sub-accordion-icon {
-            transform: rotate(90deg);
-        }
-
-        .sub-accordion-body {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.25s ease-out;
-            background-color: rgba(0, 0, 0, 0.08);
-        }
-
-        .sub-accordion.active .sub-accordion-body {
-            max-height: 300px;
-        }
-
-        .sub-accordion-content {
-            padding: 15px 20px 20px 20px;
-            font-size: 1rem;
-            opacity: 0.9;
-            line-height: 1.5;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        /* --- Link-Sektionen im Block --- */
-        .info-links {
-            margin-top: 35px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            padding-top: 20px;
-        }
-
-        .info-links h4 {
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 12px;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        .info-links ul {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .info-links a {
-            color: white;
-            text-decoration: underline;
-            font-size: 0.95rem;
-            opacity: 0.9;
-        }
-
-        .info-links a:hover {
-            opacity: 1;
-        }
-
-        /* Farb-Zuweisungen */
-        .p1 { background-color: #e65c00; }
-        .p2 { background-color: #00a0e0; }
-        .p3 { background-color: #9900cc; }
-        .p4 { background-color: #669933; }
-
-        /* --- Call to Action & Sign Section --- */
-        .cta-section {
-            text-align: center;
-            padding: 60px 20px;
-            background-color: #ffffff;
-        }
-
-        .cta-section h2 {
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            color: #243444;
-        }
-
-        .cta-section p {
-            max-width: 600px;
-            margin: 0 auto 30px auto;
-            color: #555;
-        }
-
-        .mail-icon-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: #f0f4f8;
-            border: 1px solid #cbd5e1;
-            color: #243444;
-            font-size: 1.5rem;
-            text-decoration: none;
-            transition: background-color 0.2s;
-        }
-
-        .mail-icon-btn:hover {
-            background-color: #e2e8f0;
-        }
-
-        /* --- Footer (Zentriert) --- */
-        footer {
-            background-color: #243444;
-            color: #ffffff;
-            padding: 40px 20px;
-            font-size: 0.85rem;
-        }
-
-        .footer-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
-            text-align: center;
-        }
-
-        .footer-logo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .footer-logo span {
-            font-weight: bold;
-            font-size: 1.2rem;
-            letter-spacing: 1px;
-        }
-
-        .footer-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .footer-links a {
-            color: #a0b0c0;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .footer-links a:hover {
-            color: #ffffff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -358,8 +21,14 @@
                 <p>Demokratie & Verwaltung im digitalen Zeitalter offen gestalten</p>
             </div>
         </div>
-        <button class="menu-toggle" aria-label="Menü öffnen">☰</button>
     </header>
+
+    <nav class="page-nav">
+        <a href="index.html" class="active">Manifest</a>
+        <a href="hintergrund.html">Hintergrund</a>
+        <a href="autoren.html">Autoren</a>
+        <a href="unterzeichner.html">Unterzeichner</a>
+    </nav>
 
     <main class="container">
         <section class="intro-section">
@@ -387,35 +56,35 @@
             <p>Akteure des Wandels finden sich in allen Bereichen des demokratischen Zusammenlebens. Sie nutzen die Möglichkeiten der digitalen Gesellschaft und helfen mit, das offene NRW der Zukunft zu entwickeln.</p>
 
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Mitarbeiter in den Verwaltungen <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Mitarbeiter in den Verwaltungen <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Mitarbeiter in den Verwaltungen, die offene Schnittstellen in ihrer Arbeit entwickeln und sich für eine Öffnung der Daten einsetzen sowie diese nach innen und nach außen nutzbar machen und nutzen.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Kommunen, Kreise und Landesverwaltungen <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Kommunen, Kreise und Landesverwaltungen <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Kommunen, Kreise und Landesverwaltungen bzw. -einrichtungen, die ihre politischen und administrativen Prozesse öffnen, um Bürger und Wirtschaft einzubeziehen.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Ein Landtag mit offenen Prinzipien <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Ein Landtag mit offenen Prinzipien <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Ein Landtag, der die in der Deklaration zur parlamentarischen Offenheit definierten Prinzipien als seine eigenen annimmt und in seiner gesamten Organisation aktiv lebt.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Wissenschaftler an Hochschulen <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Wissenschaftler an Hochschulen <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Wissenschaftler an Hochschulen, die ihre Forschungsdaten offenlegen und in frei zugänglichen Publikationen veröffentlichen.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Medien und kritische Begleitung <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Medien und kritische Begleitung <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Medien, die den Prozess kritisch begleiten, offene Daten selber nutzen, aufbereiten und der Öffentlichkeit zugänglich machen.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Pädagogen und Open Educational Resources <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Pädagogen und Open Educational Resources <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Pädagogen, die ihre Lehr- und Lernmaterialien zur freien Verwendung als Open Educational Resource (OER) bereitstellen.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Bürgerinnen und Bürger <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Bürgerinnen und Bürger <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Bürgerinnen und Bürger, die sich für eine demokratische Erneuerung auf den verschiedenen staatlichen Ebenen einsetzen und vielfältigste Kompetenzen einbringen.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Expertennetzwerk Open.NRW <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Expertennetzwerk Open.NRW <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Das Expertennetzwerk Open.NRW als (kommunales) Kompetenzzentrum für Offenheit in NRW, um die verfügbaren Ressourcen für ein zukunftsfähiges und demokratisches Land transparent zu bündeln.</div></div>
             </div>
 
@@ -438,23 +107,23 @@
             <p>Eine Kultur der Offenheit schafft Partizipations- und Kollaborationsmöglichkeiten sowohl digital als auch physisch. Offenes Verwaltungshandeln bildet die Grundlage für bürgerschaftliches Engagement, wirtschaftliche Entwicklung und wissenschaftliche Innovation. Es fördert starke demokratische Prozesse, die offen sind für neue Ideen, Arbeitsweisen, Aspekte und Experten.</p>
 
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Reger Austausch und Innovation <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Reger Austausch und Innovation <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Ein reger Austausch zwischen allen Akteuren zur Förderung der Innovation - auch und vor allem in der Verwaltung. Durch Mobilisierung von internem und externem Wissen auf Augenhöhe können Veränderungsprozesse besser und schneller vollzogen werden.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Vermittlung von Offenheit in der Bildung <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Vermittlung von Offenheit in der Bildung <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Vermittlung von Offenheit, Transparenz, Medienkompetenz, Inklusion und Integration in der Bildung. Die informationelle Selbstbestimmung muss rechtlich und technisch abgesichert werden.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Bereitstellung standardisierter Datensätze <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Bereitstellung standardisierter Datensätze <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Die selbstverständliche Bereitstellung von Ergebnissen des Verwaltungshandelns in standardisierten Datensätzen. Die Offenlegung von amtlichen Daten stärkt unsere Demokratie und verringert die Korruption schon im Ansatz. Ergebnisse von Verwaltungsprozessen dürfen nicht verborgen bleiben. Land und Verwaltung haben hier nichts zu verbergen.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Ein starkes Transparenzgesetz <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Ein starkes Transparenzgesetz <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Ein Transparenzgesetz, damit Verträge zur Daseinsvorsorge, Gutachten, Statistiken, Verwaltungsvorschriften, öffentliche Pläne, Geodaten und vieles mehr für jedermann einfach in einem zentralen und kostenlosen Informationsregister veröffentlicht werden.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Regelmäßige Evaluation und Bilanz <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Regelmäßige Evaluation und Bilanz <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Eine regelmäßige Evaluation der Prozesse in einer Bilanz der Offenheit, die alle Akteure in ständiger Zusammenarbeit erstellen.</div></div>
             </div>
 
@@ -478,23 +147,23 @@
             <p>Eine offene digitale Infrastruktur bildet die Voraussetzung, um unsere Demokratie zu stärken und die Akteure des Wandels auf Augenhöhe zusammenzubringen. Sie ermöglicht die kooperative Kontrolle von Prozessen und die Weiterentwicklung von technischen Systemen.</p>
 
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Quelloffene Software und offene Standards <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Quelloffene Software und offene Standards <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Die Verwendung von quelloffener Software, offenen Schnittstellen und offenen Standards um Interoperabilität, Nachhaltigkeit und Innovationen zu stärken.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Offene Netze (Freifunk) und Breitband <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Offene Netze (Freifunk) und Breitband <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Die Bereitstellung von offenen Netzen (Freifunk) und der Ausbau des Breitbandnetzes.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Online-Plattformen für Zusammenarbeit <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Online-Plattformen für Zusammenarbeit <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Die Bereitstellung von Online-Plattformen und Werkzeugen um Dialog, Partizipation und Zusammenarbeit zu fördern.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Einsatz von offenen Lizenzen <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Einsatz von offenen Lizenzen <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Der Einsatz von offenen Lizenzen, um den Zugang und die Weiterverarbeitung von Bildungs- und Wissensressourcen zu ermöglichen.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Maschinenlesbare offene Daten <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Maschinenlesbare offene Daten <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Die Bereitstellung von offenen Daten in strukturierter, maschinenlesbarer Form oder über eine offene Schnittstelle, sodass sie kostenfrei zugänglich sind und weiterverarbeitet und weiterverbreitet werden können.</div></div>
             </div>
 
@@ -520,15 +189,15 @@
             <p>Öffentliche Räume sind Lebensräume - sowohl urban als auch ländlich. Sie bilden die Grundlage von Begegnung und Kommunikation. Es gilt sie sowohl digital als auch physisch zu schützen, zu stärken und kontinuierlich weiter zu entwickeln.</p>
 
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Freie Nutzung öffentlicher Räume <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Freie Nutzung öffentlicher Räume <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Die freie Nutzung von öffentlichen Plätzen und Wegen als Orte der Begegnung ohne kommerziellen Zwang. Sie sind Teil einer lebenswerten und lebendigen Kommune.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Kulturelle Freiräume für die Gemeinschaft <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Kulturelle Freiräume für die Gemeinschaft <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Kulturelle Freiräume, deren Bedeutung sich nicht nur am monetären Wert ihrer Flächen bemisst, sondern an der Relevanz für die Gemeinschaft.</div></div>
             </div>
             <div class="sub-accordion">
-                <div class="sub-accordion-header" onclick="toggleSubAccordion(this)">Bedingungslose, neutrale digitale Netze <span class="sub-accordion-icon">➔</span></div>
+                <div class="sub-accordion-header">Bedingungslose, neutrale digitale Netze <span class="sub-accordion-icon">➔</span></div>
                 <div class="sub-accordion-body"><div class="sub-accordion-content">Bedingungslos öffentliche und neutrale digitale Netze und Räume, die den Austausch von Information und die Kommunikation erweitern.</div></div>
             </div>
 
@@ -565,21 +234,16 @@
                 <span>OGMNRW</span>
             </div>
             <nav class="footer-links">
-                <a href="#">Manifest</a>
-                <a href="#">Autoren</a>
-                <a href="#">Unterstützer</a>
-                <a href="#">Unterzeichnen</a>
-                <a href="#">Kontakt</a>
+                <a href="index.html">Manifest</a>
+                <a href="hintergrund.html">Hintergrund</a>
+                <a href="autoren.html">Autoren</a>
+                <a href="unterzeichner.html">Unterzeichner</a>
+                <a href="mailto:info@example.com">Kontakt</a>
                 <a href="#">Impressum</a>
             </nav>
         </div>
     </footer>
 
-    <script>
-        function toggleSubAccordion(headerElement) {
-            const accordion = headerElement.parentElement;
-            accordion.classList.toggle('active');
-        }
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -4,172 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hintergrund – Open Government Manifest NRW</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: #1a2530;
-            background-color: #ffffff;
-            line-height: 1.7;
-        }
-
-        h1, h2, h3 {
-            font-weight: 700;
-            color: #243444;
-        }
-
-        header {
-            background-color: #243444;
-            color: #ffffff;
-            padding: 30px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .logo-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo-bars {
-            display: flex;
-            gap: 4px;
-        }
-
-        .bar {
-            width: 25px;
-            height: 6px;
-        }
-        .bar.orange { background-color: #e65c00; }
-        .bar.blue   { background-color: #00a0e0; }
-        .bar.purple { background-color: #9900cc; }
-        .bar.green  { background-color: #669933; }
-
-        .logo-text h1 {
-            font-size: 1.4rem;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            margin-bottom: 5px;
-            color: #ffffff;
-        }
-
-        .logo-text p {
-            font-size: 0.85rem;
-            color: #a0b0c0;
-            max-width: 500px;
-        }
-
-        .container {
-            max-width: 750px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-
-        .section-title {
-            font-size: 1.6rem;
-            margin-top: 10px;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border-bottom: 2px solid #243444;
-            padding-bottom: 8px;
-            text-align: center;
-        }
-
-        p {
-            margin-bottom: 20px;
-            font-size: 1.05rem;
-            text-align: justify;
-        }
-
-        .question-box {
-            background-color: #f1f5f9;
-            border-left: 4px solid #00a0e0;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 0 6px 6px 0;
-        }
-
-        .question-box h3 {
-            font-size: 1.2rem;
-            color: #1e293b;
-            margin-bottom: 10px;
-            line-height: 1.4;
-        }
-
-        .question-box p {
-            margin-bottom: 0;
-            font-weight: 600;
-            color: #00a0e0;
-        }
-
-        .sub-heading {
-            font-size: 1.3rem;
-            margin-sc-top: 35px;
-            margin-top: 35px;
-            margin-bottom: 15px;
-            border-left: 4px solid #e65c00;
-            padding-left: 12px;
-        }
-
-        footer {
-            background-color: #243444;
-            color: #ffffff;
-            padding: 40px 20px;
-            font-size: 0.85rem;
-            margin-top: 60px;
-        }
-
-        .footer-content {
-            max-width: 1000px;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
-            text-align: center;
-        }
-
-        .footer-logo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .footer-logo span {
-            font-weight: bold;
-            font-size: 1.2rem;
-            letter-spacing: 1px;
-        }
-
-        .footer-links {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .footer-links a {
-            color: #a0b0c0;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .footer-links a:hover {
-            color: #ffffff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -188,9 +23,16 @@
         </div>
     </header>
 
+    <nav class="page-nav">
+        <a href="index.html">Manifest</a>
+        <a href="hintergrund.html" class="active">Hintergrund</a>
+        <a href="autoren.html">Autoren</a>
+        <a href="unterzeichner.html">Unterzeichner</a>
+    </nav>
+
     <main class="container">
         <h2 class="section-title">Hintergrund</h2>
-        
+
         <p>Politik 1.0 hat ausgedient. Durch das Internet entstehen ständig neue Möglichkeiten, sich zu informieren, zu vernetzen und auszutauschen. Diese Möglichkeiten werden tagtäglich ganz selbstverständlich in der Wirtschaft und im privaten Bereich genutzt. Warum nicht auch in Politik und Verwaltung?</p>
 
         <p>Die Bürger erwarten Transparenz in den Entscheidungsprozessen und Möglichkeiten zur Beteiligung. Die globalen Probleme wie Flucht und Vertreibung, Klimawandel oder der demographische Wandel können nicht von Politik und Verwaltung allein gelöst werden. Das Wissen und die Initiative der Bürger und Unternehmen müssen einbezogen werden.</p>
@@ -206,11 +48,11 @@
 
         <p>Alte Parteiwahrheiten als Reflex auf das Interesse Außenstehender helfen in dieser Situation nicht weiter. Parteien verlieren aufgrund ihrer verfestigten Rituale die Fähigkeit der Interaktion mit neuen Wählertrends und die Fähigkeit, neue Themen ergebnisoffen aufzugreifen. Die Entscheidung eines Bundesparteitages ist im Moment ihrer Beschlussfassung bereits wieder veraltet. Wir sollten in der Politik damit leben lernen, dass es nur noch eine Politik der Beta-Versionen geben kann. Die Erarbeitung einer politischen Beschlussfassung muss dem Prinzip der offenen Weiterentwicklung folgen.</p>
 
-        <p>Es gibt nicht das eine wahre und finale politische Produkt. Es muss möglich sein, einen politischen Beschluss in einem offenen Prozess vorzubereiten, zu fassen und schließlich ab dem Tag der Beschlussfassung einer beständigen (damit ist nicht „täglich von neuem“ gemeint) offenen Evaluation zu unterziehen und zu modifizieren. Politische Regeln und Entscheidungen müssen lebendig bleiben, sollten „atmen“ und sich evolutionär weiter entwickeln können. Das wäre ein Beitrag, um die Demokratie langfristig wieder zu stärken und auch in schwierigen Situationen tragfähig zu wissen.</p>
+        <p>Es gibt nicht das eine wahre und finale politische Produkt. Es muss möglich sein, einen politischen Beschluss in einem offenen Prozess vorzubereiten, zu fassen und schließlich ab dem Tag der Beschlussfassung einer beständigen (damit ist nicht „täglich von neuem" gemeint) offenen Evaluation zu unterziehen und zu modifizieren. Politische Regeln und Entscheidungen müssen lebendig bleiben, sollten „atmen" und sich evolutionär weiter entwickeln können. Das wäre ein Beitrag, um die Demokratie langfristig wieder zu stärken und auch in schwierigen Situationen tragfähig zu wissen.</p>
 
         <h3 class="sub-heading">Woher kommen wir und was bewegt uns?</h3>
 
-        <p>Wir sind Aktive, die sich aus unterschiedlichen gesellschaftlichen und politischen Beweggründen für Offenes Regierungshandeln einsetzen. Wir kommen aus der Partizipations- und Offene Daten-Bewegung. Einmal im Jahr trifft sich die Aktivenschar aus ganz Deutschland zum Netzwerken in einem Barcamp vor Ort in Wuppertal zu „Offene Kommunen.NRW“. Entstanden ist dies aus dem Kompetenznetz Bürgerhaushalt Wuppertal heraus.</p>
+        <p>Wir sind Aktive, die sich aus unterschiedlichen gesellschaftlichen und politischen Beweggründen für Offenes Regierungshandeln einsetzen. Wir kommen aus der Partizipations- und Offene Daten-Bewegung. Einmal im Jahr trifft sich die Aktivenschar aus ganz Deutschland zum Netzwerken in einem Barcamp vor Ort in Wuppertal zu „Offene Kommunen.NRW". Entstanden ist dies aus dem Kompetenznetz Bürgerhaushalt Wuppertal heraus.</p>
 
         <p>Dieter Hofmann ist der Kopf und Veranstalter und Mittelpunkt des Netzwerkes. Seit fünf Jahren bildet das Treffen einen wichtigen Meilenstein im netzpolitischen Kalender in NRW. Wuppertal ist ein Knotenpunkt für offenes Regierungshandeln geworden.</p>
 
@@ -233,15 +75,16 @@
                 <span>OGMNRW</span>
             </div>
             <nav class="footer-links">
-                <a href="#">Manifest</a>
-                <a href="#">Autoren</a>
-                <a href="#">Unterstützer</a>
-                <a href="#">Unterzeichner</a>
-                <a href="#">Kontakt</a>
+                <a href="index.html">Manifest</a>
+                <a href="hintergrund.html">Hintergrund</a>
+                <a href="autoren.html">Autoren</a>
+                <a href="unterzeichner.html">Unterzeichner</a>
+                <a href="mailto:info@example.com">Kontakt</a>
                 <a href="#">Impressum</a>
             </nav>
         </div>
     </footer>
 
+    <script src="app.js"></script>
 </body>
 </html>
